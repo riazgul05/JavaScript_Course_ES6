@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Advance-JS </title>
+    <script>
+        function sum (name,course, ...args){
+            console.log(arguments);
+
+                document.write(`Hello ${name} of ${course} :  `);
+            let sum = 0;
+            for(let i in args){
+                sum += args[i];
+            }
+
+            document.write(sum + "<br>");
+        }
+
+        sum("Yahoo baba", "Btech", 20,30,40);
+
+        sum("Riaz Gul", "BA",50,40);
+
+        sum("Salman Khan", "Bcom",50,40,70,40,20);
+
+
+       // sum(30,40)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

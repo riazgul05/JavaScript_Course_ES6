@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">                                
+    <title> Advance-JS </title>
+</head>
+<body>
+    <script>
+
+       /*let test =  async() => "Hello"            Async Function
+        test().then( (result) => {
+            console.log(result);
+        });*/
+
+        async function test() {
+            console.log("2 : Message");
+          const response = await fetch ("json/student-jisondata.json ");
+          console.log("3 : Message");
+          const student = await response.json();
+          return student;
+        }
+        console.log("1 : Message");
+        let a = test();
+        console.log("4 : Message");
+
+        console.log(a);
+    </script>
+</body> 
+</html>

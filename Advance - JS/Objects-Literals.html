@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Advance-JS </title>
+    <script>
+
+       /* let name = "Yahoo baba";
+        let course = "btech";
+        var obj = {
+            name,
+            course,
+        };
+        console.log(obj);*/
+
+        let fname = "Yahoo";
+        let lname = "Baba";
+        let course = "Btech";
+
+        function student(fname,lname,course) {
+          let fullname = fname + " " + lname;
+          return {fullname, course};
+        }
+        console.log(student(fname,lname,course));
+
+        let s = student(fname,lname,course)
+        console.log(s.fullname);
+        console.log(s.course);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

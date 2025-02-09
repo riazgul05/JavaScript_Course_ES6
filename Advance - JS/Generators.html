@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">                                
+    <title> Advance-JS </title>
+
+    <script>
+
+    function *generateit(){
+      yield  'PHP';
+      yield 'Node';
+      yield 'Angular';
+      yield 'React';
+    }
+
+    let g = generateit();
+
+    console.log(g.next().value);
+    console.log(g.return('Ending Now'));
+    console.log(g.next().value);
+
+   // console.log(g.next().value);
+    //console.log([...g]);
+
+
+    /*function *generateit(){
+      let yArry = [yield, yield, yield] ;
+      console.log(`Result : ${yArry[2]}`);
+      }
+    let g = generateit();
+      g.next();
+      g.next("PHP");
+      g.next('Python');
+      g.next("Java");
+      g.next(800);*/
+
+    </script>
+</head>
+<body>
+
+</body> 
+</html>

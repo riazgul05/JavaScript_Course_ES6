@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>                               
+    <title> Advance-JS </title>
+</head>
+<body>
+    <script>
+        fetch("json/student-datajson.json")
+        .then((response)=> response.json())
+        .then((data)=>{
+            console.log(data);
+
+            for(var x in data){
+            document.write(`${data[x].name} - ${data[x].age} -${data[x].city}  <br>`);
+            }
+        })
+
+        .catch((error)=>document.write("Con,t the fetch data "));
+    </script>
+</body>
+</html>

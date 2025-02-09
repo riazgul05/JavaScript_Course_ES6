@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">                                
+    <title> Advance-JS </title>
+    <script>
+      class employee{
+        constructor(name,age,salary){
+            this.empname = name;
+            this.empnage = age;
+            this.empsalary = salary;
+            console.log("Cnostructor :  Employee");
+        }
+        info(){
+            document.write(`<h3>Employee : Classes</h3> 
+            Nmae : ${this.empname}<br>
+            Age : ${this.empnage}<br>
+            Salary : ${this.empsalary}`);
+        }
+        }                                              // nots //super(); extends
+      class manager extends employee{
+        info(){
+            let ta = 1000;
+            let pa = 300;
+             let totalsalary = this.empsalary + ta + pa;
+             
+             
+            document.write(`<h3> Manager : Classes</h3> 
+            Nmae : ${this.empname}<br>
+            Age : ${this.empnage}<br>
+            Salary : ${totalsalary}`);
+        }
+       
+      }
+      class test extends manager{
+
+    }
+      let a = new test(" Yahoo baba ", 25 , 20000);
+     // let b = new employee(" Khan gul", 22 , 12000);
+      a.info();
+     //b.info();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

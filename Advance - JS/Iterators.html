@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">                                
+    <title> Advance-JS </title>
+
+    <script>
+
+     let numbers = [200,300,400];
+     let iter = numbers[Symbol.iterator]();
+
+       iter.next();
+       console.log(iter.next().value);
+       console.log(iter.next().done);
+
+    </script>
+</head>
+<body>
+
+</body> 
+</html>
